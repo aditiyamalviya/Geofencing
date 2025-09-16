@@ -32,7 +32,7 @@ if __name__=="__main__":
     location_lat=22.9487162 #yha pr jis jgh ka fence banana hai uska latitude dalega
     location_lon=76.0129413 #yha pr jis jgh ka fence banana hai uska lognitude dalega
     person_lat=22.9487162 #yha pr jis bhi insan ka geofensing chek kerna h k voo ander hai k bhar uska latude
-    person_lon=77.0129413 #yha pr jis bhi insan ka geofensing chek kerna h k voo ander hai k bhar uska lotitude
+    person_lon=76.0129413 #yha pr jis bhi insan ka geofensing chek kerna h k voo ander hai k bhar uska lotitude
     area=10 #area of geofencing yha pr jis bhi location ka area dalna hai uska radius dalna hai meter m
     gephync(employee_latitude=person_lat,employee_longitude=person_lon,latitude_of_center=location_lat,longitude_of_center=location_lon,radius=area)
 

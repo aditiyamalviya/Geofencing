@@ -11,7 +11,7 @@ geofence_data = {
     'radius': None
 }
 
-result_val=""
+result_val=None
 
 def gephync(employee_latitude, employee_longitude):
 
@@ -119,6 +119,7 @@ def check_location():
 
 @app.route('/api/check_alerts', methods=['POST'])
 def check_alerts():
+    global result_val
     data = request.get_json()
     # print(data)
 
