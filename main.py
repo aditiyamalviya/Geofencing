@@ -123,7 +123,7 @@ def check_alerts():
 
     employee_lat = data.get('tour_lat')
     employee_lon = data.get('tour_lon')
-    employee_id=data.get("tour_id")
+    # employee_id=data.get("tour_id")
     # device_info = data.get('topic')
     # timestamp=data.get('tst')
 
@@ -145,7 +145,7 @@ def check_alerts():
     return jsonify({
         "status": "success",
         "message": result,
-        "touristID": employee_id
+        # "touristID": employee_id
     }), 200
 
 
