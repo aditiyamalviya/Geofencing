@@ -123,8 +123,8 @@ def check_alerts():
     data = request.get_json()
     # print(data)
 
-    employee_lat = data.get('tour_lat')
-    employee_lon = data.get('tour_lon')
+    employee_lat = data.get('lat')
+    employee_lon = data.get('lon')
     # employee_id=data.get("tour_id")
     # device_info = data.get('topic')
     # timestamp=data.get('tst')
