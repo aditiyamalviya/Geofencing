@@ -11,6 +11,7 @@ geofence_data = {
     'radius': None
 }
 
+result_val=""
 
 def gephync(employee_latitude, employee_longitude):
 
@@ -142,12 +143,20 @@ def check_alerts():
     # date = dt_object.strftime('%Y-%m-%d')  # Extracts date in 'YYYY-MM-DD' format
     # time = dt_object.strftime('%H:%M:%S')  # Extracts time in 'HH:MM:SS' format
 
+    result_val=result
+
     return jsonify({
         "status": "success",
         "message": result,
         # "touristID": employee_id
     }), 200
 
+@app.route('/api/provide_alert', methods=['GET'])
+def provide_alerts():
+    return jsonify({
+        "result":result_val
+    })
+    # print(data)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5002)  # Change host and port as necessary
